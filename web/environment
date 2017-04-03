@@ -4,10 +4,10 @@
 # it will copy the directory over, rather than just its contents.
 # NOTE: no trailing slash on destination directory
 
-export DEPLOY_SOURCE_DIR=
-export DEPLOY_DEST_DIR=
-export DEPLOY_SERVER=
-export DEPLOY_ACCOUNT=
+export DEPLOY_SOURCE_DIR=./app/
+export DEPLOY_DEST_DIR=/var/www/gunblues
+export DEPLOY_SERVER=172.104.64.171
+export DEPLOY_ACCOUNT=kevin
 export DEPLOY_KEY=
 
-export WWW_RIGHTFUL_OWNER=
+export WWW_RIGHTFUL_OWNER=www-data
