@@ -1,0 +1,19 @@
+{
+  "name": "MyYasui",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/assets/js/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "pace": "~0.5.1",
+    "typeahead.js": "~0.10.2",
+    "jquery-pjax": "latest",
+    "jquery.lazyload": "1.9.3"
+  }
+}

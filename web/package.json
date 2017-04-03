@@ -1,0 +1,15 @@
+{
+    "name": "Gunblues",
+    "version": "0.0.1",
+    "description": "",
+    "main": "Gruntfile.js",
+    "dependencies": {
+        "grunt": "",
+        "grunt-contrib-jshint": "",
+        "grunt-contrib-uglify": "",
+        "grunt-contrib-compass": "",
+        "grunt-contrib-cssmin": "",
+        "grunt-contrib-watch": ""
+    },
+    "author": "gunblues"
+}
