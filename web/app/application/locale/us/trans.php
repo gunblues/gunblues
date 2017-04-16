@@ -2,10 +2,10 @@
 define("SITE_NAME", "Gunblues");
 define("PRIVACY_POLICY", "Privacy Policy");
 
-define("HTML_KEYWORDS", "popFilm,MyYasui,Taiwan Stock,freeMusic");
-define("HTML_DESCRIPTION", "popFilm,MyYasui,Taiwan Stock,freeMusic");
+define("HTML_KEYWORDS", "popFilm,IBJ,Taiwan Stock,freeMusic");
+define("HTML_DESCRIPTION", "popFilm,IBJ,Taiwan Stock,freeMusic");
 
-define("MYYASUI", "MyYasui");
+define("MYYASUI", "IBJ");
 define("URMUISC", "popMusic");
 define("URFILM", "popFilm");
 define("TWSTOCK", "Taiwan Stock");

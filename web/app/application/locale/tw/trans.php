@@ -2,10 +2,10 @@
 define("SITE_NAME", "Gunblues");
 define("PRIVACY_POLICY", "隱私權政策");
 
-define("HTML_KEYWORDS", "影片輕鬆看,比價小資女,便宜的台股,無料音樂");
-define("HTML_DESCRIPTION", "影片輕鬆看,比價小資女,便宜的台股,無料音樂");
+define("HTML_KEYWORDS", "短片爆報,愛比價,便宜的台股,無料音樂");
+define("HTML_DESCRIPTION", "短片爆報,愛比價,便宜的台股,無料音樂");
 
-define("MYYASUI", "比價小資女");
+define("MYYASUI", "愛比價");
 define("URMUISC", "無料音樂");
 define("URFILM", "短片爆報");
 define("TWSTOCK", "便宜的台股");
