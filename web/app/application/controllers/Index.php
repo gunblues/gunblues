@@ -12,7 +12,7 @@ class IndexController extends BaseController
     public function indexAction() {
 
         if ($this->mobileIndex === 1) {
-            $stock = "http://stockm.gunblues.com";
+            $stock = "http://m.istock.tw";
         }
         else {
             $stock = "http://stock.gunblues.com";
