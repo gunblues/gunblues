@@ -6,8 +6,8 @@ define("HTML_KEYWORDS", "popFilm,IBJ,Taiwan Stock,freeMusic");
 define("HTML_DESCRIPTION", "popFilm,IBJ,Taiwan Stock,freeMusic");
 
 define("MYYASUI", "IBJ");
-define("URMUISC", "popMusic");
-define("URFILM", "popFilm");
+define("URMUISC", "Langja");
+define("URFILM", "VideoBowBow");
 define("TWSTOCK", "Taiwan Stock");
 define("ILOVEPOPCORN", "我愛爆爆");
 
