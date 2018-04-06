@@ -59,7 +59,7 @@ while true; do
             echo -e "\e[00;33mBegin rsync...\e[00m"
             if [ "$DEPLOY_KEY" == "" ]; then
                 # Access by tediously typing a password over and again
-                rsync --chmod=ug=rwX --rsh='ssh -p16888' -e ssh -axv --delete --exclude-from=$DIR/rsync-exclude \
+                rsync --chmod=ug=rwX --rsh='ssh -p16888' -axv --delete --exclude-from=$DIR/rsync-exclude \
                     $DEPLOY_SOURCE_DIR $DEPLOY_ACCOUNT@$DEPLOY_SERVER:$DEPLOY_DEST_DIR
             else
                 # Access by key
