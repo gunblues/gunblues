@@ -11,7 +11,7 @@ define("URFILM", "VideoBowBow");
 define("TWSTOCK", "Taiwan Stock");
 
 define("MYYASUI_DESC", "Integrate shopping sites in Taiwan to let you find the goods is affordable but of high quality");
-define("URMUISC_DESC", "Watch the most popular music video and different kind of singers' collections ");
+define("MVBOWBOW_DESC", "Watch the most popular music video and different kind of singers' collections ");
 define("URFILM_DESC", "Easy to watch videos on Youtube");
 define("TWSTOCK_DESC", "Economic indicators and Taiwan Stock");
 
