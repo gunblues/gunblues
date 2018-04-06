@@ -54,22 +54,22 @@ while true; do
         [Yy] )
             # Change entire owner/group to deploy account in order to have the proper permissions.
             echo -e "\e[00;33mChanging directory permission to $DEPLOY_ACCOUNT:$DEPLOY_ACCOUNT...\e[00m"
-            ssh -t $DEPLOY_ACCOUNT@$DEPLOY_SERVER "sudo chown -R $DEPLOY_ACCOUNT:$DEPLOY_ACCOUNT $DEPLOY_DEST_DIR"
+            ssh -p 16888 -t $DEPLOY_ACCOUNT@$DEPLOY_SERVER "sudo chown -R $DEPLOY_ACCOUNT:$DEPLOY_ACCOUNT $DEPLOY_DEST_DIR"
 
             echo -e "\e[00;33mBegin rsync...\e[00m"
             if [ "$DEPLOY_KEY" == "" ]; then
                 # Access by tediously typing a password over and again
-                rsync --chmod=ug=rwX -e ssh -axv --delete --exclude-from=$DIR/rsync-exclude \
+                rsync --chmod=ug=rwX --rsh='ssh -p16888' -e ssh -axv --delete --exclude-from=$DIR/rsync-exclude \
                     $DEPLOY_SOURCE_DIR $DEPLOY_ACCOUNT@$DEPLOY_SERVER:$DEPLOY_DEST_DIR
             else
                 # Access by key
-                rsync --chmod=ug=rwX -axv --delete --exclude-from=$DIR/rsync-exclude \
+                rsync --chmod=ug=rwX --rsh='ssh -p16888' -axv --delete --exclude-from=$DIR/rsync-exclude \
                     -e ssh -i $DEPLOY_KEY $DEPLOY_SOURCE_DIR $DEPLOY_ACCOUNT@$DEPLOY_SERVER:$DEPLOY_DEST_DIR
             fi
 
             # Change back permissions.
             echo -e "\e[00;33mChanging directory permission back to $WWW_RIGHTFUL_OWNER:$WWW_RIGHTFUL_OWNER...\e[00m"
-            ssh -t $DEPLOY_ACCOUNT@$DEPLOY_SERVER "sudo chown -R $WWW_RIGHTFUL_OWNER:$WWW_RIGHTFUL_OWNER $DEPLOY_DEST_DIR"
+            ssh -p 16888 -t $DEPLOY_ACCOUNT@$DEPLOY_SERVER "sudo chown -R $WWW_RIGHTFUL_OWNER:$WWW_RIGHTFUL_OWNER $DEPLOY_DEST_DIR"
             
             break;;
 
