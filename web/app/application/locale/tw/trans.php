@@ -6,7 +6,7 @@ define("HTML_KEYWORDS", "短片爆報,愛比價,便宜的台股,無料音樂");
 define("HTML_DESCRIPTION", "短片爆報,愛比價,便宜的台股,無料音樂");
 
 define("MYYASUI", "愛比價");
-define("MVBOWBOW", "MV爆報");
+define("MVBOWBOW", "MV報報");
 define("URFILM", "短片爆報");
 define("TWSTOCK", "便宜的台股");
 
