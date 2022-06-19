@@ -8,7 +8,7 @@ define("HTML_DESCRIPTION", "popFilm,IBJ,Taiwan Stock,freeMusic");
 define("MYYASUI", "IBJ");
 define("MVBOWBOW", "MvBowBow");
 define("URFILM", "VideoBowBow");
-define("TWSTOCK", "Taiwan Stock");
+define("TWSTOCK", "iStock");
 
 define("MYYASUI_DESC", "Integrate shopping sites in Taiwan to let you find the goods is affordable but of high quality");
 define("MVBOWBOW_DESC", "Watch the most popular music video and different kind of singers' collections ");
